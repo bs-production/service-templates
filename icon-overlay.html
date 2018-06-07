@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+        #services {
+        background:none;
+        padding: 40px 0;
+        }
+        #service-items-wrap {
+        margin-top: 30px;
+        max-width: 90rem;
+        }
+        /* Service Box image backgrounds */
+        .service-item.service1 {background-image:url('http://placehold.it/600x400');}
+        .service-item.service2 {background-image:url('http://placehold.it/600x400');}
+        .service-item.service3 {background-image:url('http://placehold.it/600x400');}
+        .service-item.service4 {background-image:url('http://placehold.it/600x400');}
+        /* SVG Adjust Colors */
+        .srv-icon {
+
+        }
+        .srv-icon svg {
+            fill: #fff;
+        }
+        /* Service item box styles */
+        .service-item {
+        text-align: center;
+        position: relative;
+        margin-bottom: 30px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0px -250px rgba(42, 56, 72, 0.6) inset;
+        transition: box-shadow .3s ease;
+        overflow: hidden;
+        height: 225px;
+        max-height: 225px;
+        }
+        .service-item a {
+        display: block;
+        }
+        .service-item .srv-icon {
+        opacity: 1;
+        padding-top: 40px;
+        transition: all .3s ease;
+        }
+        .service-item .srv-icon svg {
+        max-height: 100px;
+        transition: all .3s ease;
+        }
+        .srv-text {
+        color: #fff;
+        padding: 0 10px;
+        position: relative;
+        bottom: 0;
+        transition: all .3s ease;
+        }
+        .srv-text p.service-title {
+        font-size: 20px;
+        margin: 15px auto 5px;
+        line-height: 1.5;
+        font-weight: 600;
+        }
+        .service-item p.description {
+        line-height: 1.3rem;
+        margin-bottom: 0;
+        padding: 0px 20px;
+        opacity: 0;
+        transition: opacity .2s ease;
+        }
+        .service-item:hover {
+        box-shadow: 0px -350px rgba(45, 146, 230, .8) inset;
+        }
+        .service-item:hover .srv-icon {
+        margin-bottom: 30px;
+        padding-top: 25px;
+        }
+        .service-item:hover .srv-icon svg {
+        max-height:65px;
+        }
+        .service-item:hover .srv-text {
+        bottom: 20px;
+        }
+        .service-item:hover p.description {
+        opacity: 1;
+        }
+        @media screen and (max-width: 640px),
+        screen and (max-height: 736px){
+        .service-item {
+        box-shadow: 0px -175px rgba(42, 56, 72, 0.6) inset;
+        height: 150px;
+        }
+        .service-item a {
+        height: 150px;
+        }
+        .service-item .srv-icon {
+        padding-top: 10px;
+        opacity: 1;
+        }
+        .svg-service-icons {
+        height: 85px;
+        }
+        .srv-text {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        padding: 0 25px;
+        }
+        .srv-text p.service-title {
+        line-height: 1.2em;
+        font-size: 15px;
+        }
+        .service-item p.description {
+        display: none;
+        }
+        .service-item .srv-icon svg {
+        max-height: 85px;
+        }
+        }
+        @media screen and (max-width: 360px) {
+        .service-item .srv-icon svg {
+        max-height: 65px;
+        text-align:center;
+        }
+        .srv-text p.service-title {
+        line-height: 1.1em;
+        font-size: 15px;
+        }
+        }
+       
+        </style>
+    </head>
+    <body>
+        <div class="row" id="service-items-wrap">
+            <div class="small-6 large-3 columns">
+                <div class="service-item service1">
+                    <a href="#">
+                        <div class="srv-icon"><?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/basement_waterproofing.svg"); ?></div>
+                        <div class="srv-text"><p class="service-title">Service Type</p>
+                        <p class="description">Service description goes here. Make it good! Not too long and not too short.</p></div>
+                    </a>
+                </div>
+            </div>
+            <div class="small-6 large-3 columns">
+                <div class="service-item service2">
+                    <a href="#">
+                        <div class="srv-icon"><?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/basement_waterproofing.svg"); ?></div>
+                        <div class="srv-text"><p class="service-title">Service Type</p>
+                        <p class="description">Service description goes here. Make it good! Not too long and not too short.</p></div>
+                    </a>
+                </div>
+            </div>
+            <div class="small-6 large-3 columns">
+                <div class="service-item service3">
+                    <a href="#">
+                        <div class="srv-icon"><?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/basement_waterproofing.svg"); ?></div>
+                        <div class="srv-text"><p class="service-title">Service Type</p>
+                        <p class="description">Service description goes here. Make it good! Not too long and not too short.</p></div>
+                    </a>
+                </div>
+            </div>
+            <div class="small-6 large-3 columns">
+                <div class="service-item service4">
+                    <a href="#">
+                        <div class="srv-icon"><?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/basement_waterproofing.svg"); ?></div>
+                        <div class="srv-text"><p class="service-title">Service Type</p>
+                        <p class="description">Service description goes here. Make it good! Not too long and not too short.</p></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

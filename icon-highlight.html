@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	#services {
+    background-color: #f5f5f5;
+    padding: 40px 0px;
+}
+.service-item {
+    background:#fff;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+    padding: 25px 15px;
+    border-top:2px solid #FADE3C;
+    transition: all .2s ease;
+}
+.service-item:hover {
+    background: #FADE3C;
+}
+.service-item p {
+    margin-bottom: 0px;
+    line-height: 1.4;
+    font-size: .95rem;
+}
+.service-item p.service-title {
+    font-size: 17px;
+    font-weight:700;
+    font-family:inherit;
+    text-transform:uppercase;
+    margin: 10px auto 0;
+    color: #0F385A;
+}
+.service-item a img {
+    border: solid 4px #fefefe;
+    transition: box-shadow 200ms ease-out;
+}
+.service-item a img:hover {
+    box-shadow: 0 0px 0px 5px #0F385A;
+}
+.service-item svg {
+    fill: #0c385a;
+    max-height: 45px;
+}
+@media screen and (max-width: 640px){
+    #services {
+        padding: 20px 0px;
+    }
+    .service-item p:not(.service-title) {
+        display: none;
+    }
+    .service-item p.service-title {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .service-item {
+    min-height:158px;
+}
+}
+@media screen and (max-width: 360px){
+.service-item p.service-title {
+    font-size: 14px;
+}
+.service-item {
+    padding: 15px 0;
+    min-height:140px;
+}
+}
+	</style>
+</head>
+<body>
+<div class="container" id="services">
+	<div class="row">
+		<div class="small-6 medium-6 large-3 columns">
+			<div class="service-item">
+				<a href="/" title="" alt="">
+					<?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/basement_waterproofing.svg"); ?>
+					<p class="service-title">Service Type</p>
+				</a>
+				<p>Service description goes here. Make it good! Not too long and not too short.</p>
+			</div>
+		</div>
+		<div class="small-6 medium-6 large-3 columns">
+			<div class="service-item">
+				<a href="/" title="" alt="">
+					<?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/basement_waterproofing.svg"); ?>
+					<p class="service-title">Service Type</p>
+				</a>
+				<p>Service description goes here. Make it good! Not too long and not too short.</p>
+			</div>
+		</div>
+		<div class="small-6 medium-6 large-3 columns">
+			<div class="service-item">
+				<a href="/" title="" alt="">
+					<?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/basement_waterproofing.svg"); ?>
+					<p class="service-title">Service Type</p>
+				</a>
+				<p>Service description goes here. Make it good! Not too long and not too short.</p>
+			</div>
+		</div>
+		<div class="small-6 medium-6 large-3 columns">
+			<div class="service-item">
+				<a href="/" title="" alt="">
+					<?php echo file_get_contents("http://b388022801b3244fdbae-c913073b3759fb31d6b728a919676eab.r15.cf1.rackcdn.com/v3/templates/icons/basement_waterproofing.svg"); ?>					
+					<p class="service-title">Service Type</p>
+				</a>
+				<p>Service description goes here. Make it good! Not too long and not too short.</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

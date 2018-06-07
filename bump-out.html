@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+/***------ Homepage Services ------***/
+#services {
+    padding: 100px 0px 60px;
+    border: 1px solid rgba(0, 104, 255, 0.15);
+    box-shadow: 0 0 100px rgba(0,0,0,.25);
+    background-attachment: fixed;
+}
+
+.service-item {
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    padding: 85px 30px 30px;
+    border: 1px solid #fff;
+    position: relative;
+    margin: 40px 20px;
+    transition: all .2s ease;
+}
+.service-item span {
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 9px;
+    background: #999;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    transition: all .2s ease;
+}
+.service-item br {
+    display: none;
+}
+.service-item p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 1.3em;
+    color: #555;
+    text-align: center;
+    top: 0;
+    transition: all .2s ease;
+}
+.service-item p.service-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 auto 10px;
+    color: #444;
+}
+.service-icon {
+    background: #444;
+    border-radius: 100%;
+    height: 90px;
+    width: 90px;
+    left: 50%;
+    top: 15px;
+    position: absolute;
+    transform: scale(1) translate(-50%,-50%);
+    box-shadow: 0 0 0 rgba(0,0,0,.2);
+    transition: all .2s ease;
+}
+.service-icon svg {
+    fill: #fff;
+    max-width: 60px;
+    max-height: 60px;
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transition: fill .2s ease;
+}
+
+#services a:hover .service-item span {
+    opacity: 1;
+    bottom: -10px;
+}
+#services a:hover .service-item {
+    box-shadow: 0px 10px 30px rgba(0,0,0,.2);
+}
+#services a:hover .service-icon {
+    background: #fff;
+    top: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+#services a:hover .service-icon svg {
+    fill: #444;
+}
+a .service-item::before {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(1);
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    opacity: 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    transition: all .2s ease;
+}
+a:hover .service-item::before {
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1.2);
+}
+a:hover .service-item p {
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    top: -10px;
+}
+a.service1 .service-item::before {
+    background-image: linear-gradient(rgba(59, 59, 59, 0.75),rgba(50,50,50, 0.75)),url('http://placehold.it/600x400');
+}
+a.service2 .service-item::before {
+    background-image: linear-gradient(rgba(59, 59, 59, 0.75),rgba(50,50,50, 0.75)),url('http://placehold.it/600x400');
+    background-position: center bottom;
+}
+a.service3 .service-item::before {
+    background-image: linear-gradient(rgba(59, 59, 59, 0.75),rgba(50,50,50, 0.75)),url('http://placehold.it/600x400');
+}
+a.service4 .service-item::before {
+    background-image: linear-gradient(rgba(59, 59, 59, 0.75),rgba(50,50,50, 0.75)),url('http://placehold.it/600x400');
+    background-position: center bottom;
+}
+a.service5 .service-item::before {
+    background-image: linear-gradient(rgba(59, 59, 59, 0.75),rgba(50,50,50, 0.75)),url('http://placehold.it/600x400');
+}
+a.service6 .service-item::before {
+    background-image: linear-gradient(rgba(59, 59, 59, 0.75),rgba(50,50,50, 0.75)),url('http://placehold.it/600x400');
+}
+@media screen and (max-width: 1024px){
+    .service-item br {
+        display: block;
+    }
+}
+@media screen and (max-width: 640px){
+    #services {
+        padding: 30px 0px 10px;
+    }
+    .service-item {
+        padding: 50px 20px;
+        margin: 20px 0;
+    }
+    .service-icon {
+        height: 60px;
+        width: 60px;
+    }
+    .service-icon svg {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    .service-item {
+        padding: 60px 5px 20px;
+    }
+    .service-item p:not(.service-title) {
+        display: none;
+    }
+    .service-item p.service-title {
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+}
+    </style>
+</head>
+<body>
+<!-- -----------------------
+--------- Services --------
+---------------------------->
+<div class="container" id="services">
+    <div class="row" data-equalizer>
+        <div class="small-6 large-4 columns" data-equalizer-watch>
+            <a class="service1" href="/" title="" alt="">
+                <div class="service-item">
+                    <div class="service-icon"><?php echo file_get_contents("http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/142/waterproofing2.svg"); ?></div>
+                    <p class="service-title">Service Type</p>
+                    <p>Cupcake ipsum dolor sit amet donut liquorice biscuit.</p>
+                    <span>More <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+        </div>
+        <div class="small-6 large-4 columns" data-equalizer-watch>
+            <a class="service2" href="/" title="" alt="">
+                <div class="service-item">
+                    <div class="service-icon"><?php echo file_get_contents("http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/142/waterproofing2.svg"); ?></div>
+                    <p class="service-title">Service Type</p>
+                    <p>Cupcake ipsum dolor sit amet donut liquorice biscuit.</p>
+                    <span>More <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+        </div>
+                <div class="small-6 large-4 columns" data-equalizer-watch>
+            <a class="service3" href="/" title="" alt="">
+                <div class="service-item">
+                    <div class="service-icon"><?php echo file_get_contents("http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/142/waterproofing2.svg"); ?></div>
+                    <p class="service-title">Service Type</p>
+                    <p>Cupcake ipsum dolor sit amet donut liquorice biscuit.</p>
+                    <span>More <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+        </div>
+                <div class="small-6 large-4 columns" data-equalizer-watch>
+            <a class="service4" href="/" title="" alt="">
+                <div class="service-item">
+                    <div class="service-icon"><?php echo file_get_contents("http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/142/waterproofing2.svg"); ?></div>
+                    <p class="service-title">Service Type</p>
+                    <p>Cupcake ipsum dolor sit amet donut liquorice biscuit.</p>
+                    <span>More <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+        </div>
+                <div class="small-6 large-4 columns" data-equalizer-watch>
+            <a class="service5" href="/" title="" alt="">
+                <div class="service-item">
+                    <div class="service-icon"><?php echo file_get_contents("http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/142/waterproofing2.svg"); ?></div>
+                    <p class="service-title">Service Type</p>
+                    <p>Cupcake ipsum dolor sit amet donut liquorice biscuit.</p>
+                    <span>More <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+        </div>
+                <div class="small-6 large-4 columns" data-equalizer-watch>
+            <a class="service6" href="/" title="" alt="">
+                <div class="service-item">
+                    <div class="service-icon"><?php echo file_get_contents("http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/142/waterproofing2.svg"); ?></div>
+                    <p class="service-title">Service Type</p>
+                    <p>Cupcake ipsum dolor sit amet donut liquorice biscuit.</p>
+                    <span>More <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="columns center">
+            <a class="cta-button center" href="/free-estimate.html">Get a Free Quote</a>
+        </div>
+    </div>
+    </div><!-- /#services -->
+</body>
+</html>
